@@ -30,8 +30,7 @@ Degree centrality measures how many connections or links there are to a given no
 ### Betweenness Centrality
 Betweenness centrality measures “the number of times a node lies on the shortest path between other nodes,” within a social network (Disney, 2023). In our project, the  Big Issue' corporation had the highest betweenness centrality. This indicates that the Big Issue corporation is the leading corporation that connects the different members of the House of Lords together within the network, meaning that the Big Issue is the biggest “bridge” within this network. They would be frequently invested in by politicians not necessarily from the same political party. Below is a list of top 20 corporations by their betweenness centrality.
 
-.md-typeset figure img {<img width="899" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e">   ![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/5545086b-57af-40dd-b467-08e1daa59ccb)
-    display: block;}
+.md-typeset figure img {<img width="899" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e">   ![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/5545086b-57af-40dd-b467-08e1daa59ccb)     display: block;}
 
 
 
