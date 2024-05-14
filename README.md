@@ -30,8 +30,13 @@ Degree centrality measures how many connections or links there are to a given no
 ### Betweenness Centrality
 Betweenness centrality measures “the number of times a node lies on the shortest path between other nodes,” within a social network (Disney, 2023). In our project, the  Big Issue' corporation had the highest betweenness centrality. This indicates that the Big Issue corporation is the leading corporation that connects the different members of the House of Lords together within the network, meaning that the Big Issue is the biggest “bridge” within this network. They would be frequently invested in by politicians not necessarily from the same political party. Below is a list of top 20 corporations by their betweenness centrality.
 
-.md-typeset figure img {<img width="899" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e">   ![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/5545086b-57af-40dd-b467-08e1daa59ccb)     display: block;}
+<img width="899" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e"> 
+![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/6b538b5c-4f15-4b0c-af6c-1ede549e50ba)
 
+To visualize the result, we created two histograms to demonstrate the relationship between the top 20 corporation invested and the political party affiliation of the Lords. The first histogram represents the top 20 corporations by betweenness centrality with the breakdown of their investors’ political affiliation. The party affiliation is color-coded, revealing the distribution of party interest in these investments. The second histogram switches the independent and dependent variable, and shows the number of top 20 corporations linked to different political parties of the members of the House of Lords. For example, the members of the political party crossbench have 19 connections within the top 20 corporations, whereas the Democratic Unionist Party only has one connection.
+
+![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/684dbc20-ad04-43a8-8728-c323a897a30f)
+![corporation by party histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/8687c49e-4f56-4b8d-a781-69b00d52c42c)
 
 
 ## References
