@@ -10,7 +10,7 @@ Our project mainly drew on Borgatti and Halgin’s (2011) work on Affiliation Ne
 ## Methodology 
 Our dataset was found on the UK Parliament website under “Register of Members’ Financial Interests,” the URL link of which is cited in our References. Our first challenge was that our original dataset was very large quantity-wise, and companies overlapped in the original mapping. For example, Microsoft showed up as multiple nodes and distinct companies due subsets of the brand. Our solution was to conduct “data cleaning,” which is the process of identifying and replacing incorrect information in the results of a data set (Data Cleaning, 2023). Data cleaning was important as it can greatly skew the results of our data analysis and lead to inaccurate interpretations of the current political landscape. 
 
-In our dataset the Lords declared the companies with which they had financial interests, which made up the nodes in our network. Co-affiliation was found if there were ties within a set of nodes, which could mean two Lords sharing a said financial interest in the same company. The Lord with the highest degree centrality in our network is the Lord who has the most corporate shares in companies, and the corporation with highest centrality was composed of the most financial interests. The concept of betweenness centrality measures the extent to which a node lies on the shortest paths between other nodes in the network. Corporations with high betweenness centrality would be frequently invested in with other politicians that are not from the same party, for example Conservative and Labour parties. We ranked the Top 20 corporations with the highest betweenness centrality, and then with a histogram mapped how those corporations are divided between political parties. In our mapping of the dataset we paid attention to clusters, which symbolize communities of nodes that were more tightly connected to each other than to the rest of the network. Communities could represent clusters of corporations that are frequently invested in together, such as technology companies. We used the Girvan-Newman method, which is a community clustering technique which involves removing edges with the largest edge betweenness centrality (Chiang, 2021). “Edge betweenness” is the number of “shortest paths passing the edge” (Chiang, 2021), and in using this method we were able to simplify the dataset for more accurate analysis. 
+In our dataset, the Lords declared the companies with which they had financial interests, which made up the nodes in our network. Co-affiliation was found if there were ties within a set of nodes, which could mean two Lords sharing a said financial interest in the same company. The Lord with the highest degree centrality in our network is the Lord who has the most corporate shares in companies, and the corporation with highest centrality was composed of the most financial interests. The concept of betweenness centrality measures the extent to which a node lies on the shortest paths between other nodes in the network. Corporations with high betweenness centrality would be frequently invested in with other politicians that are not from the same party, for example Conservative and Labour parties. We ranked the Top 20 corporations with the highest betweenness centrality, and then with a histogram mapped how those corporations are divided between political parties. In our mapping of the dataset we paid attention to clusters, which symbolize communities of nodes that were more tightly connected to each other than to the rest of the network. Communities could represent clusters of corporations that are frequently invested in together, such as technology companies. We used the Girvan-Newman method, which is a community clustering technique which involves removing edges with the largest edge betweenness centrality (Chiang, 2021). “Edge betweenness” is the number of “shortest paths passing the edge” (Chiang, 2021), and in using this method we were able to simplify the dataset for more accurate analysis. 
 
 ## Google Colab Notebook
 Here is the link to our group's Google Colab Notebook: https://colab.research.google.com/drive/1roEzQAWj2tK21sLJJ_6-5JMKx0ef5_eI?usp=sharing
@@ -58,17 +58,17 @@ In conclusion, our study underscores the profound impact of financial contributi
 ## References
 Borgatti, S. P. and Halgin, D. S. (2011). ‘Analyzing affiliation networks’, _The Sage handbook of social network analysis_, 1, pp.417-433.
 
-Dorey, P. and Purvis, M. (2018). ‘Representation in the Lords’, in _Exploring Parliament_, pp.244-254.
-
-Spoon, J. J. and Klüver, H. (2019). ‘Party convergence and vote switching: Explaining mainstream party decline across Europe’, _European Journal of Political Research_, 58(4), pp.1021-1042.
-
-Chiang, Jeffery. “Girvan–Newman - the Clustering Technique in Network Analysis.” Medium, Analytics Vidhya, 11 Oct. 2021, medium.com/analytics-vidhya/girvan-newman-the-clustering-technique-in-network-analysis-27fe6d665c92. 
+Chiang, J. (2021). “Girvan–Newman - the Clustering Technique in Network Analysis.” Medium, Analytics Vidhya, 11 Oct. 2021, medium.com/analytics-vidhya/girvan-newman-the-clustering-technique-in-network-analysis-27fe6d665c92. 
 
 “Data Cleaning: Definition, Methods and Relevance in Data Science.” DataScientest, 20 Apr. 2023, datascientest.com/en/data-cleaning-definition-methods-and-relevance-in-data-science. 
+
+Dorey, P. and Purvis, M. (2018). ‘Representation in the Lords’, in _Exploring Parliament_, pp.244-254.
 
 “Financial Interests.” Conflict of Interest: Division of Finance and Administration, 25 May 2022, coi.utk.edu/financial-interests/. 
 
 “Register of Members’ Financial Interests.” UK Parliament,www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/registers-of-interests/register-of-members-financial-interests/
+
+Spoon, J. J. and Klüver, H. (2019). ‘Party convergence and vote switching: Explaining mainstream party decline across Europe’, _European Journal of Political Research_, 58(4), pp.1021-1042.
 
 ## Appendix
 ### Creating the bipartite graph: 
