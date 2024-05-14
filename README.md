@@ -34,7 +34,7 @@ Betweenness centrality measures “the number of times a node lies on the shorte
 
 To visualize the result, we created two histograms to demonstrate the relationship between the top 20 corporation invested and the political party affiliation of the Lords. The first histogram represents the top 20 corporations by betweenness centrality with the breakdown of their investors’ political affiliation. The party affiliation is color-coded, revealing the distribution of party interest in these investments. The second histogram switches the independent and dependent variable, and shows the number of top 20 corporations linked to different political parties of the members of the House of Lords. For example, the members of the political party crossbench have 19 connections within the top 20 corporations, whereas the Democratic Unionist Party only has one connection.
 
-![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/684dbc20-ad04-43a8-8728-c323a897a30f.png width=500)
+![betweenness centrality histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/684dbc20-ad04-43a8-8728-c323a897a30f width="500")
 ![corporation by party histogram](https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/8687c49e-4f56-4b8d-a781-69b00d52c42c width=500)
 
 
