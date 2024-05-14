@@ -16,7 +16,7 @@ In our dataset the Lords declared the companies with which they had financial in
 Here is the link to our group's Google Colab Notebook: https://colab.research.google.com/drive/1roEzQAWj2tK21sLJJ_6-5JMKx0ef5_eI?usp=sharing
 
 ## Results and Analysis 
-In this section, we will show the results from our project that explore the financial networks and organizations associated with members of the House of Lords. As illustrated in the bipartite graph below, the graph is composed of numerous nodes and edges, highlighting that there is an extensive network of connections between the members of the House of Lord’s and the corporations that these members are financially interested in. The light green nodes on the graph represent the various corporations financially associated with the members of the House of Lords, while the other colors represent the diverse political party affiliations of House of Lord members.
+In this section, we will show the results from our project that explore the financial networks and organizations associated with members of the House of Lords. As illustrated in the bipartite graph below, the graph is composed of numerous nodes and edges, highlighting that there is an extensive network of connections between the members of the House of Lord’s and the corporations that these members are financially interested in. The light green nodes on the graph represent the various corporations financially associated with the members of the House of Lords, while the other colors represent the diverse political party affiliations of House of Lord members. We have attached a more detailed breakdown of how we generated the graph in the Appendix. 
 
 <img width="1294" alt="overview of bipartite network" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/7d3985a7-c7d7-4e30-b73c-2b9a20ae03f2">
 
@@ -28,7 +28,7 @@ Degree centrality measures how many connections or links there are to a given no
 <img width="1178" alt="top 1 Lord" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/3bb3aa17-1765-49fc-8dec-c6b20b5e7c54">
 
 ### Betweenness Centrality
-Betweenness centrality measures “the number of times a node lies on the shortest path between other nodes,” within a social network (Disney, 2023). In our project, the  Big Issue' corporation had the highest betweenness centrality. This indicates that the Big Issue corporation is the leading corporation that connects the different members of the House of Lords together within the network, meaning that the Big Issue is the biggest “bridge” within this network. Below is a table that ranks the betweenness centrality among the corporations.
+Betweenness centrality measures “the number of times a node lies on the shortest path between other nodes,” within a social network (Disney, 2023). In our project, the  Big Issue' corporation had the highest betweenness centrality. This indicates that the Big Issue corporation is the leading corporation that connects the different members of the House of Lords together within the network, meaning that the Big Issue is the biggest “bridge” within this network. Below is a list of top 20 corporations by their betweenness centrality.
 
 <img width="899" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e">
 
@@ -47,3 +47,26 @@ Chiang, Jeffery. “Girvan–Newman - the Clustering Technique in Network An
 “Financial Interests.” Conflict of Interest: Division of Finance and Administration, 25 May 2022, coi.utk.edu/financial-interests/. 
 
 “Register of Members’ Financial Interests.” UK Parliament,www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/registers-of-interests/register-of-members-financial-interests/
+
+## Appendix
+### Creating the bipartite graph: 
+G = nx.Graph(): This line creates an empty graph object called G using NetworkX.
+### Politician nodes: 
+politician_nodes = df.index.tolist(): This line assumes that df is a Pandas DataFrame and retrieves the index (i.e., the row labels) of the DataFrame, converting it into a list. This list presumably contains the names or identifiers of politicians.
+
+G.add_nodes_from(politician_nodes, bipartite=0): This line adds nodes to the graph G. The nodes added are from the politician_nodes list. The argument bipartite=0 indicates that these nodes belong to the "0th" partition of the bipartite graph. In a bipartite graph, nodes can be divided into two disjoint sets such that edges only connect nodes from different sets. Here, the bipartite=0 attribute indicates that these nodes belong to one of the two partitions, typically referred to as the "left" or "top" partition.
+### Corporation nodes: 
+for politician, data in df.iterrows():: This loop iterates over each row in the DataFrame. For each iteration, politician represents the name, and data represents the row data associated with that politician.
+
+companies = data.dropna().tolist()[1:]: This line extracts the non-null entries from the row data, excluding the first element (the politician's name), and the subsequent elements are the names of companies associated with that politician.
+
+for company in companies:: This loop iterates over each company associated with the current politician.
+
+company_list = company.split('¬'): This line splits the company entry into a list based on the '¬' delimiter. It seems like the company entry might contain multiple companies separated by this delimiter.
+
+for comp in company_list:: This loop iterates over each individual company in the company_list.
+
+G.add_node(comp, bipartite=1): This line adds a node to the graph G representing the current company. The bipartite=1 attribute indicates that this node belongs to the second partition of the bipartite graph. In a bipartite graph, nodes from different partitions represent different types of entities (in this case, politicians and companies), and edges only connect nodes from different partitions.
+
+G.add_edge(politician, comp): This line adds an edge between the current politician node and the current company node. This edge represents an association between the politician and the company.
+
