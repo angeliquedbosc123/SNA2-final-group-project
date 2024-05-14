@@ -1,0 +1,20 @@
+!pip install --upgrade scipy networkx
+import collections
+
+from google.colab import output
+output.enable_custom_widget_manager()
+
+!pip install ipysigma
+
+from ipysigma import Sigma
+
+import networkx as nx
+
+from networkx.algorithms import bipartite
+
+!pip install requests
+import requests
+
+import json
+
+import pandas as pd
