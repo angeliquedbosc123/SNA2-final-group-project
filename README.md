@@ -30,14 +30,18 @@ Degree centrality measures how many connections or links there are to a given no
 ### Betweenness Centrality
 Betweenness centrality measures “the number of times a node lies on the shortest path between other nodes,” within a social network (Disney, 2023). In our project, the  Big Issue' corporation had the highest betweenness centrality. This indicates that the Big Issue corporation is the leading corporation that connects the different members of the House of Lords together within the network, meaning that the Big Issue is the biggest “bridge” within this network. They would be frequently invested in by politicians not necessarily from the same political party. Below is a list of top 20 corporations by their betweenness centrality.
 
-<img width="700" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e"> 
+<p align="center">
+    <img width="700" alt="top 20 corporates" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/af4baa77-6b54-463f-895a-73b24de4868e"> 
+</p>
 
 To visualize the result, we created two histograms to demonstrate the relationship between the top 20 corporation invested and the political party affiliation of the Lords. The first histogram represents the top 20 corporations by betweenness centrality with the breakdown of their investors’ political affiliation. The party affiliation is color-coded, revealing the distribution of party interest in these investments. The second histogram switches the independent and dependent variable, and shows the number of top 20 corporations linked to different political parties of the members of the House of Lords. For example, the members of the political party crossbench have 19 connections within the top 20 corporations, whereas the Democratic Unionist Party only has one connection.
 
 <p align="center">
     <img width="800" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/056e2d75-3ad7-4aa7-9087-1ceb5d7a86ce">
 </p>
-<img align="center" width="800" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/ee9c2a76-0eaa-469e-ae59-ec1dc5c00d8a">
+<p align="center">
+    <img align="center" width="800" src="https://github.com/angeliquedbosc123/SNA2-final-group-project/assets/167986231/ee9c2a76-0eaa-469e-ae59-ec1dc5c00d8a">
+</p>
 
 ### Community Detection
 We applied the Girvan Newman Community Detection algorithm, which “relies on the iterative elimination of edges that have the highest number of shortest paths between nodes passing through them” (Girvan-Newman algorithm). In other words, edges with high betweenness that cross between communities would be removed early in the process. In removing the edges one at a time, we can break the social network down and reveal the underlying, smaller communities within this network. In our project, these communities would be the clusters of corporations that overlap amongst the various politicians in our network, indicating that they tend to be more frequently invested together. This represents what corporations the House of Lord members are investing in and does not take into account the political affiliation of each politician. This enables us to strictly analyze the financial interests of members of the House of Lords and find groups formed within this network without the political party connecting these members. In our project this includes organization’s including, but not limited to, Chanel, Markham Services, and Magdalen College. 
