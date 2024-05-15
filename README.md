@@ -1,4 +1,5 @@
 # SNA2-final-group-project
+Angélique BOSC, Anja KLEIN, Zhi hao LI, Annabelle REN, Nicholas SAWYER, Xinyi TIAN
 ## Introduction
 The UK operates on a parliamentary system and is classified as a representative democracy, which means the public elect Members of the Parliament (MPs) to represent their interest in monitoring the work of the Government. The leader of the party that has the most MPs elected after a General Election becomes the Prime Minister (PM), or the Head of Government. The Parliament is made up of three parts: the House of Commons, the House of Lords, and the Monarch. The House of Commons is the elected chamber of Parliament, where laws are debated and amended. By contrast, the House of Lords is made up of Hereditary Peers (i.e. those who inherited their noble ranks), Life Peers (i.e. those who cannot pass their title on to their children) and Bishops. The Lords are nominated by the PM and appointed by the Crown, all of whom are selected for their knowledge and expertise in order to assist the work of the House of Commons. 
 
