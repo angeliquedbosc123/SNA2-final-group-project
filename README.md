@@ -67,7 +67,7 @@ Dorey, P. and Purvis, M. (2018). ‘Representation in the Lords’, in _Explorin
 
 “Financial Interests.” Conflict of Interest: Division of Finance and Administration, 25 May 2022, coi.utk.edu/financial-interests/. 
 
-“Register of Members’ Financial Interests.” UK Parliament,www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/registers-of-interests/register-of-members-financial-interests/
+“Register of Members’ Financial Interests.” UK Parliament, www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/registers-of-interests/register-of-members-financial-interests/
 
 Spoon, J. J. and Klüver, H. (2019). ‘Party convergence and vote switching: Explaining mainstream party decline across Europe’, _European Journal of Political Research_, 58(4), pp.1021-1042.
 
